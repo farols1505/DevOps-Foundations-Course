@@ -8,9 +8,14 @@ on:
   push:
     branches:
       - master
+    path:
+      - '**.py'
   pull_request:
     branches:
       - master
+    path:
+      - '**.py'
+  workflow_dispatch:
 
 jobs:
   # Build job
